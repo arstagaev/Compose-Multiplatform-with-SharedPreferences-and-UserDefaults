@@ -1,5 +1,14 @@
-package com.test.kmpdemo3_storage
+package com.test.kmpdemo3_storage.data
 
+interface KMMContext {
+  fun setInt(key: String, value: Int)
+  fun setString(key: String, value: String)
+  fun setBool(key: String, value: Boolean)
+
+  fun getInt(key: String, default: Int): Int
+  fun getString(key: String): String?
+  fun getBool(key: String, default: Boolean): Boolean
+}
 
 /** Wrapper you’ll inject everywhere */
 class KMMPreference(private val context: KMMContext) {

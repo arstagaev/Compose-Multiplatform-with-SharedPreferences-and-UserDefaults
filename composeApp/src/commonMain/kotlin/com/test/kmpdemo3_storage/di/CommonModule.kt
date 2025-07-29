@@ -1,6 +1,6 @@
-package com.test.kmpdemo3_storage
+package com.test.kmpdemo3_storage.di
 
-import org.koin.core.context.startKoin
+import com.test.kmpdemo3_storage.data.KMMPreference
 import org.koin.dsl.module
 
 val commonModule = module {

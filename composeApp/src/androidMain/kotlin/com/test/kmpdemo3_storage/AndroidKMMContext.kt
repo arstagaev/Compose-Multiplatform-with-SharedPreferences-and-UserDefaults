@@ -1,6 +1,7 @@
 package com.test.kmpdemo3_storage
 
 import android.content.SharedPreferences
+import com.test.kmpdemo3_storage.data.KMMContext
 
 /** Implementation backed by Android SharedPreferences */
 class AndroidKMMContext(private val prefs: SharedPreferences) : KMMContext {
