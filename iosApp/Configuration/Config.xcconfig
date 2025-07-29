@@ -1,0 +1,7 @@
+TEAM_ID=
+
+PRODUCT_NAME=kmpdemo3_storage
+PRODUCT_BUNDLE_IDENTIFIER=com.test.kmpdemo3_storage.kmpdemo3_storage$(TEAM_ID)
+
+CURRENT_PROJECT_VERSION=1
+MARKETING_VERSION=1.0
