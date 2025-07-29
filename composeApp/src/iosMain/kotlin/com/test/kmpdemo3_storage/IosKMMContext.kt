@@ -6,13 +6,13 @@ import platform.Foundation.NSUserDefaults
 class IosKMMContext : KMMContext {
     private val ud = NSUserDefaults.standardUserDefaults()
 
-    override fun putInt(key: String, value: Int) =
+    override fun setInt(key: String, value: Int) =
         ud.setInteger(value.toLong(), key)
 
-    override fun putString(key: String, value: String) =
+    override fun setString(key: String, value: String) =
         ud.setObject(value, key)
 
-    override fun putBool(key: String, value: Boolean) =
+    override fun setBool(key: String, value: Boolean) =
         ud.setBool(value, key)
 
     override fun getInt(key: String, default: Int): Int =
